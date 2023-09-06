@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.main-nav {
+  text-align: center;
+  font-size: 1.1em;
+  border-bottom: 1px solid rgba(225, 255, 255, .3);
+  position: sticky;
+  width: 100%;
+  top: 0;
+}
+
+.nav ul {
+  margin: 0px;
+  background-color: white;
+  padding: 20px 16px;
+  border-bottom: solid 2px;
+  border-bottom-color: rgb(187, 199, 226);
+}
+
+.nav div {
+  display: inline;
+  margin: 30px;
+}
+
+
+.nav li {
+  display: inline-block;
+  position: relative;
+}
+
+
+
+.nav li:hover {
+  opacity: 1;
+}
+
+.nav li::before {
+  transition: 300ms;
+  height: 1px;
+  content: "";
+  position: absolute;
+  background-color: black;
+  margin-top: 30px;
+}
+
+.nav li::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.nav li:hover::before {
+  width: 100%;
+}
+
+
+
+
+
+
+
+.nav a {
+  display: inline-block;
+  padding: 1em;
+  color: black;
+  text-decoration: none;
+}
+
+
+.nav-menu {
+  padding-right: 150px;
+  font-size: 13px;
+}
+
+.chevron {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 100px;
+}
+
+.chevron::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(45deg);
+  left: 4px;
+  top: 2px;
+  margin-left: -30px;
+  background-color: rgb()
+}
+
+.next-to-chevron {
+  margin-right: -50px;
+}
+
+.logo {
+  margin: -8px;
+  margin-right: -30px;
+}
+
+.login-btn {
+  background-color: white;
+  color: black;
+  border: none;
+  height: 36px;
+  width: 80px;
+  font-size: 12.5px;
+}
+
+.getstarted-btn {
+  background-color: rgb(37, 106, 224);
+  color: white;
+  border: none;
+  height: 28px;
+  width: 85px;
+  border-radius: 10px;
+  font-size: 12.5px;
+}
+
+.top-background {
+  background-color: rgb(249, 250, 252);
+  width: 100%;
+  padding-bottom: 80px;
+  justify-items: center;
+  margin: auto;
+}
+
+.main-page-top {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 1000px;
+  margin: auto;
+  justify-items: center;
+  padding-top: 40px;
+  padding-bottom: 120px;
+}
+
+.main-page-grid {
+  flex: 50%;
+}
+
+.main-page-intro {
+  font-size: 80px;
+  color: rgb(33, 37, 41);
+  margin-bottom: 5px;
+}
+
+.main-page-description {
+  font-size: 15px;
+  line-height: 25px;
+  color: rgb(48, 54, 59);
+}
+
+.main-page-brain {
+  width: 400px;
+  padding-top: 80px;
+}
+
+.large-mainpage-btns {
+  display: flex;
+  gap: 15px;
+  padding-top: 2px;
+}
+
+.large-getstarted-btn {
+  background-color: rgb(37, 106, 224);
+  color: white;
+  border: none;
+  height: 63px;
+  width: 160px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.large-trynow-btn {
+  background-color: white;
+  color: black;
+  border: solid 1px;
+  border-color: rgb(187, 199, 226);
+  height: 63px;
+  width: 160px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.mid-fact-card {
+  position: relative;
+  border-color: black;
+  border-width: 5px;
+  border-radius: 25px;
+  background-color: rgb(41,104,224);
+  width: 960px;
+  height: 150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  text-align: center;
+  color: white;
+  margin-top: -75px;
+  margin-bottom: 120px;
+  position: 1;
+}
+
+.mid-fact-card h2 {
+  margin-top: 30px;
+  margin-bottom: -35px;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.mid-fact-card h3 {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.mid-fact-card img {
+  height: 20px;
+  margin-bottom: -4px;
+  margin-right: 6px;
+}
+
+#eye-icon {
+  height: 15px;
+  margin-bottom: -3px;
+}
+
+.second-container {
+  margin-bottom: 300px;
+  display: grid;
+  justify-items: center;
+  background-color: white;
+  text-align: center;
+}
+
+.second-container img {
+  width: 80px;
+  margin-top: -10px;
+}
+
+.second-container h1 {
+  font-size: 55px;
+  margin-top: 15px;
+}
+
+.second-container h2 {
+  font-size: 15px;
+  color: rgb(70,84,103);
+  font-weight: lighter;
+  line-height: 1.5;
+  margin-top: -15px;
+}
